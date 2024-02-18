@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    /*border: 1px solid black;*/
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+:root {
+    --color-cerulean: #4484ce;
+    --color-aluminiun: #d9d9d9;
+    --color-light: #f9cf00;
+    --color-tangerine: #f19f40;
+    --color-white: #fff;
+    --color-black: #000;
+
+}
+
+.menu {
+    background-color: rgb(80, 80, 80);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-title {
+    margin-top: 10px;
+    color: var(--color-light);
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    padding: 10px;
+    color: var(--color-white);
+}
+
+.menu-item:hover {
+    color: var(--color-light);
+    background-color: var(--color-cerulean);
+}
+
+.about {
+    width: 100vw;
+    background-color: var(--color-aluminiun);
+}
+
+.about-img {
+    width: 60vw;
+    margin: 50px 20vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--color-cerulean);
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about-text {
+    padding: 10px 20px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.work {
+    background-color: var(--color-white);
+}
+
+.work-title {
+    padding: 20px;
+    text-align: center;
+}
+
+.work-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+}
+
+.work-item {
+    background-color: var(--color-tangerine);
+    width: 50vw;
+    height: 50vw;
+}
+
+.work-item1 {
+    background-color: var(--color-cerulean);
+    width: 50vw;
+    height: 50vw;
+}
+
+.work-item2 {
+    background-color: var(--color-aluminiun);
+    width: 50vw;
+    height: 50vw;
+}
+
+.work-item3 {
+    background-color: var(--color-light);
+    width: 50vw;
+    height: 50vw;
+}
+
+.resume {
+    padding: 20px;
+    background-color: var(--color-aluminiun);
+}
+
+.resume-title {
+    text-align: center;
+}
+
+.resume-page {
+    padding: 20px;
+    width: 100%;
+    height: 600px;
+}
+
+embed {
+    width: 100%;
+}
+
+.footer {
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-title {
+    color: var(--color-white);
+}
+
+.footer-title:hover {
+    color: var(--color-white);
+    cursor: default;
+}
+
+.footer-links a {
+    color: var(--color-white);
+}
+
+.footer-links a:hover {
+    color: var(--color-light);
+}
+
+
