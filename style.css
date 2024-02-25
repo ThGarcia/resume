@@ -79,7 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 
 .about-img {
@@ -115,6 +115,8 @@
 .work-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: auto;
 }
 
 .work-card i,
@@ -124,56 +126,52 @@
     color: var(--color-cerulean);
 }
 
-.work-item {
-    padding: 10px;
+.work-card i:hover,
+.work-card h1:hover {
+    color: var(--color-light);
+}
+
+.work-item,
+.work-item1,
+.work-item2,
+.work-item3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    background-image: url(./assets/work-3d.png);
+    padding: 10px;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 50vw;
+    box-shadow: 0 0 10px var(--color-cerulean);
+    z-index: 1;
+    border: 2px solid var(--color-cerulean);
+}
+
+.work-item:hover,
+.work-item1:hover,
+.work-item2:hover,
+.work-item3:hover {
+    box-shadow: 0 0 10px var(--color-light);
+    z-index: 2;
+    border: 2px solid var(--color-light);
+}
+
+.work-item {
+    background-image: url(./assets/work-3d.png);
 }
 
 .work-item1 {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
     background-image: url(./assets/work-design.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 50vw;
 }
 
 .work-item2 {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
     background-image: url(./assets/work-code.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 50vw;
 }
 
 .work-item3 {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
     background-image: url(./assets/work-anim.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 50vw;
 }
 
 .resume {
@@ -198,7 +196,6 @@ embed {
 .footer {
     background-color: rgb(80, 80, 80);
     padding: 20px;
-    color: var(--color-white);
     display: flex;
     justify-content: space-between;
     font-size: 18px;
@@ -206,20 +203,18 @@ embed {
 }
 
 .footer-title {
-    color: var(--color-white);
+    color: var(--color-cerulean);
 }
 
 .footer-title:hover {
-    color: var(--color-white);
+    color: var(--color-light);
     cursor: default;
 }
 
 .footer-links a {
-    color: var(--color-white);
+    color: var(--color-cerulean);
 }
 
 .footer-links a:hover {
     color: var(--color-light);
 }
-
-
