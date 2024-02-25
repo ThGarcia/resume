@@ -106,8 +106,7 @@
 }
 
 .work-card i,
-.work-card p {
-    font-size: 48px;
+.work-card h1 {
     color: var(--color-cerulean);
 }
 
