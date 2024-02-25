@@ -88,8 +88,8 @@
 }
 
 .work {
+    width: 100vw;
     background-color: var(--color-white);
-    width: calc(100% - 100px);
     align-items: center;
     margin: auto;
     margin-bottom: 50px;
