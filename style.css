@@ -4,7 +4,7 @@
     text-decoration: none;
     box-sizing: border-box;
     border: none;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 ::-webkit-scrollbar {
@@ -63,11 +63,18 @@
     background-color: var(--color-aluminiun);
 }
 
+.about-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
 .about-img {
     width: 60vw;
     margin: 50px 20vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--color-cerulean);
+    box-shadow: 0 0 25px var(--color-light);
 }
 
 .about-title {
@@ -75,13 +82,17 @@
 }
 
 .about-text {
-    padding: 10px 20px;
+    padding: 20px;
     text-align: justify;
     font-weight: bold;
 }
 
 .work {
     background-color: var(--color-white);
+    width: calc(100% - 100px);
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .work-title {
@@ -92,30 +103,63 @@
 .work-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 20px;
+}
+
+.work-card i,
+.work-card p {
+    font-size: 48px;
+    color: var(--color-cerulean);
 }
 
 .work-item {
-    background-color: var(--color-tangerine);
-    width: 50vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-image: url(./assets/work-3d.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 50vw;
 }
 
 .work-item1 {
-    background-color: var(--color-cerulean);
-    width: 50vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-image: url(./assets/work-design.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 50vw;
 }
 
 .work-item2 {
-    background-color: var(--color-aluminiun);
-    width: 50vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-image: url(./assets/work-code.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 50vw;
 }
 
 .work-item3 {
-    background-color: var(--color-light);
-    width: 50vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-image: url(./assets/work-anim.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 50vw;
 }
 

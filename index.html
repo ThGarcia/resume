@@ -12,20 +12,20 @@
 
 <body>
   <header>
-    <div class="menu">
+    <div class="menu" id="menu">
       <h1 class="menu-title">Thiago Rafael Garcia</h1>
       <nav class="menu-options">
         <div class="menu-list">
-          <a href="#">
+          <a href="#about">
             <p class="menu-item">Sobre</p>
           </a>
-          <a href="#">
+          <a href="#work">
             <p class="menu-item">Trabalhos</p>
           </a>
-          <a href="#">
+          <a href="#resume">
             <p class="menu-item">Curriculo</p>
           </a>
-          <a href="#">
+          <a href="#footer">
             <p class="menu-item">Contato</p>
           </a>
         </div>
@@ -33,7 +33,10 @@
     </div>
   </header>
   <main>
-    <div class="about">
+    <div class="about" id="about">
+      <div class="about-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Og_tWW3oQ60?si=-WY8n-pCWqthd2aV" title="My resume" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
       <img class="about-img" src="./assets/avatar.png" alt="me" />
       <h1 class="about-title">Quem sou eu?</h1>
       <p class="about-text">Sou um entusiasta da tecnologia, formado em 2023 em Ciência da Computação, com expêriencia
@@ -53,31 +56,47 @@
         empresas que buscam soluções tecnológicas criativas, eficazes e sustentáveis.</p>
     </div>
 
-    <div class="work">
+    <div class="work" id="work">
       <h1 class="work-title">Trabalhos</h1>
       <div class="work-card">
-        <div class="work-item"></div>
-        <div class="work-item1"></div>
-        <div class="work-item2"></div>
-        <div class="work-item3"></div>
+        <div class="work-item">
+          <i class="ri-box-3-line"></i>
+          <p>3D</p>
+        </div>
+        <div class="work-item1">
+          <i class="ri-computer-line"></i>
+          <p>Design</p>
+        </div>
+        <div class="work-item2">
+          <i class="ri-code-line"></i>
+          <p>Códigos</p>
+        </div>
+        <div class="work-item3">
+          <i class="ri-play-circle-line"></i>
+          <p>Animações</p>
+        </div>
       </div>
     </div>
 
-    <div class="resume">
+    <div class="resume" id="resume">
       <h1 class="resume-title">Curriculo Profissional</h1>
       <embed class="resume-page" src="./assets/resume.pdf" type="application/pdf" />
     </div>
   </main>
   <footer>
-    <div class="footer">
-      <a href="/"><p class="footer-title">&copy; Thiago Garcia</p></a>
+    <div class="footer" id="footer">
+      <a href="#menu">
+        <p class="footer-title">&copy; Thiago Garcia</p>
+      </a>
       <div class="footer-links">
-        <a  href="mailto:garciathiagorafael@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>        
-        <a  href="https://github.com/ThGarcia?tab=repositories" target="_blank"><i class="ri-github-line"></i></a>        
-        <a  href="https://www.linkedin.com/in/garciathiagorafael/" target="_blank"><i class="ri-linkedin-line"></i></a>        
-        <a  href="https://www.instagram.com/garciathiagorafael/?next=%2F" target="_blank"><i class="ri-instagram-line"></i></a>        
-        <a  href="https://www.youtube.com/channel/UC4xXfFg7BJziV_qoOSTwFRw" target="_blank"><i class="ri-youtube-line"></i></a>        
-        <a  href="https://wa.me/5548984972129" target="_blank"><i class="ri-whatsapp-line"></i></a>
+        <a href="mailto:garciathiagorafael@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+        <a href="https://github.com/ThGarcia?tab=repositories" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://www.linkedin.com/in/garciathiagorafael/" target="_blank"><i class="ri-linkedin-line"></i></a>
+        <a href="https://www.instagram.com/garciathiagorafael/?next=%2F" target="_blank"><i
+            class="ri-instagram-line"></i></a>
+        <a href="https://www.youtube.com/channel/UC4xXfFg7BJziV_qoOSTwFRw" target="_blank"><i
+            class="ri-youtube-line"></i></a>
+        <a href="https://wa.me/5548984972129" target="_blank"><i class="ri-whatsapp-line"></i></a>
       </div>
     </div>
   </footer>
