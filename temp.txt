@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resizable Column</title>
+<style>
+    .column {
+        width: calc(25% - 20px); /* 25% para cada coluna com margem de 10px em ambos os lados */
+        margin: 10px;
+        float: left;
+        background-color: lightblue;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .column:hover {
+        transform: scale(1.1);
+        z-index: 1; /* Para que a coluna aumentada fique sobre as outras */
+    }
+
+    .column.active {
+        width: 100%;
+        margin: 0;
+        z-index: 2; /* Colocando a coluna expandida sobre todas as outras */
+    }
+</style>
+</head>
+<body>
+<div class="column" onclick="toggleSize(this)">Coluna 1</div>
+<div class="column" onclick="toggleSize(this)">Coluna 2</div>
+<div class="column" onclick="toggleSize(this)">Coluna 3</div>
+<div class="column" onclick="toggleSize(this)">Coluna 4</div>
+
+<script>
+    function toggleSize(column) {
+        column.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
+
+
+container = 80%
+list = gap 80%
+item
+
+onclick container - set layout
